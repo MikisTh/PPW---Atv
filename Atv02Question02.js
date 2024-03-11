@@ -1,7 +1,13 @@
-function adinhaNum (int n, n1){
+function adinhaNum (int max, min, n, n1){
     n=n1;
     return
 }
+
+let min = 1;
+let max = 100;
+let n = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(n);
+
 let n1 = prompt("Informe o valor do número pensado:");
 
 for(n1=1;n1<=100; n1++){
