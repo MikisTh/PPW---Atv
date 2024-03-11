@@ -1,6 +1,7 @@
 function maioridade (int idade) {
     idade=18
-       
+    
+    
         let idade = prompt ("Informe sua idade:");
     
     if(idade>=18){
@@ -10,4 +11,5 @@ function maioridade (int idade) {
     }
 }
 return (idade);
+
 
