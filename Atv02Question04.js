@@ -1,4 +1,4 @@
-function verificadorTriangular(double l1, l2, l3){
+function verificadorTriangular(l1, l2, l3){
     double = l1, l2, l3;
 
     let l1 = prompt("informe o valor do primeiro lado:");
@@ -13,9 +13,9 @@ function verificadorTriangular(double l1, l2, l3){
     }
     if(l1!=l2!=l3){
         console.log("O triângulo é escaleno!");
-    }else if(l1=l2!=l3 && l1!=l2=l3 && l2!=l1=l3){
+    }else if(l1==l2!=l3 && l1!=l2==l3 && l2!=l1==l3){
         console.log("O triângulo é isósceles!");
-    }else(l1=l2=l3){
+    }else(l1==l2==l3);{
         console.log("O triangulo é equilátero!");
 }
 }

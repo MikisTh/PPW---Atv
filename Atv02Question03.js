@@ -1,4 +1,5 @@
-function maioridade (int idade) {
+function maioridade (idade) {
+    Int = idade;
     idade=18
     
     
@@ -11,5 +12,3 @@ function maioridade (int idade) {
     }
 }
 return (idade);
-
-

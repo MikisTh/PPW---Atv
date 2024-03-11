@@ -1,6 +1,6 @@
-function adinhaNum (int max, min, n, n1){
-    n=n1;
-    return
+function adivinhaNum (max, min, n, n1){
+    int = max, min, n, n1;
+    return n = n1;
 }
 
 let min = 1;

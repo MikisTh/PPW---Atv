@@ -1,4 +1,4 @@
-function saqueLimite (int valor){
+function saqueLimite (valor){
     i = valor;
 
     
