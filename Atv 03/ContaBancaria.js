@@ -10,90 +10,116 @@ function Menu(verificarSaldo, realizarSaque, realizarDeposito, realizarTransfere
     
 }
 
-function verificarSaldo(saldo) {
-    if (saldo > 0) {
-        alert(`Saldo positivo: R$${saldoAtual}`);
-    } else if (saldo < 0) {
-        alert(`Saldo negativo: R$${saldoAtual}`);
-    } else if (saldo = 0) {
-        alert(`Você não possui saldo! R$${saldoAtual}`)
-    }
-}
-var button = document.querySelector("Verificar");
-button.onClick = verificarSaldo();
 
-function realizarSaque(valorSaque, saldoAtual,) {
-    var valorSaque = input.valorSaque;
-    if (valorSaque <= saldoAtual) {
-        saldoAtual -= valorSaque;
-            alert(`Saque realizado com sucesso. Saldo atual: R$${saldoAtual}`);
+function verificarSaldo(Saldo) {
+
+    if (Saldo > 0) {
+  
+      console.log("Saldo positivo");
+  
     } else {
-            alert(`Saldo insuficiente: R$${saldoAutal}`);
+  
+      console.log("Saldo negativo");
+  
     }
-}
-var valorSaque = document.querySelector("input")
+  
+  }
 
-var button = document.querySelector("Sacar");
-button.onClick = realizarSaque();
+function realizarSaque(saldoAtual, valorSaque) {
 
-function realizarDeposito(valorDeposito, saldoAtual) {
+    if (valorSaque <= saldoAtual) {
+  
+      saldoAtual -= valorSaque;
+  
+      console.log(`Saque realizado com sucesso. Saldo atual: R$${saldoAtual}`);
+  
+    } else {
+  
+      console.log("Saldo insuficiente");
+  
+    }
+  
+  }
 
-    var valorDeposito = input.value;
-        alert(`Depósito realizado com sucesso. Novo saldo: R$${saldoAtual}`);
-    return saldoAtual += valorDeposito;
-}
-var valorDeposito = document.querySelector("input")
 
-var button = document.querySelector("Depositar");
-button.onClick = realizarDeposito();
+function realizarDeposito(saldoAtual, valorDeposito) {
+
+    saldoAtual += valorDeposito;
+  
+    console.log(`Depósito realizado com sucesso. Novo saldo: R$${saldoAtual}`);
+  
+  }
 
 function realizarTransferencia(saldoOrigem, saldoDestino, valorTransferencia, limiteTransferencia) {
 
     if (valorTransferencia <= saldoOrigem && valorTransferencia <= limiteTransferencia) {
-        saldoOrigem -= valorTransferencia;
-        saldoDestino += valorTransferencia;
-            alert("Transferência realizada com sucesso");
+  
+      saldoOrigem -= valorTransferencia;
+  
+      saldoDestino += valorTransferencia;
+  
+      console.log("Transferência realizada com sucesso");
+  
     } else if (valorTransferencia > saldoOrigem) {
-            alert("Saldo insuficiente para transferência");
+  
+      console.log("Saldo insuficiente para transferência");
+  
     } else {
-            alert("Valor excede o limite de transferência");
+  
+      console.log("Valor excede o limite de transferência");
+  
     }
-}
-var valorTransferencia = document.querySelector("input")
+  
+  }
 
-var button = document.querySelector("Transferir");
-button.onClick = realizarTransferencia();
 
-function checarChequeEspecial(saldo) {
-    if (saldo < 0) {
-        alert("Dentro do limite do cheque especial");
+function checarChequeEspecial(Saldo) {
+
+    if (Saldo < 0) {
+  
+      console.log("Dentro do limite do cheque especial");
+  
     } else {
-        alert("Fora do limite do cheque especial");
-}
-}
-var button = document.querySelector("Checar");
-button.onClick = checarChequeEspecial();
+  
+      console.log("Fora do limite do cheque especial");
+  
+    }
+  
+  }
 
 function atualizarCadastro(cadastroAtivo, saldo) {
+
     if (cadastroAtivo) {
-        if (saldo > 0) {
-            alert("Cadastro ativo e saldo positivo");
-        } else {
-            alert("Cadastro ativo, mas precisa regularizar saldo");
-            }
+  
+      if (saldo > 0) {
+  
+        console.log("Cadastro ativo e saldo positivo");
+  
+      } else {
+  
+        console.log("Cadastro ativo mas precisa regularizar saldo");
+  
+      }
+  
     } else {
-            alert("Por favor, atualize seu cadastro");
+  
+      console.log("Por favor, atualize seu cadastro");
+  
     }
-}
-var button = document.querySelector("Atualizar");
-button.onClick = atualizarCadastro();
+  
+  }
 
 function avaliarCredito(saldo, historicoCredito, rendaMensal) {
+
     if (saldo > 1000 && historicoCredito && rendaMensal > 3000) {
-        alert("Crédito aprovado");
+  
+      console.log("Crédito aprovado");
+  
     } else {
-        alert("Crédito negado");
+  
+      console.log("Crédito negado");
+  
     }
-}
-var button = document.querySelector("Avaliar");
-button.onClick = avaliarCredito();
+  
+  }
+  
