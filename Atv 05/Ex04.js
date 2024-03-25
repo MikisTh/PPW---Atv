@@ -2,5 +2,5 @@
 function converterParaMaiusculas(texto) {
     return texto.toUpperCase();
   }
-  console.log(converterParaMaiusculas("Olá, mundo!")); 
-  console.log(converterParaMaiusculas("javascript é divertido"));
+  console.log(converterParaMaiusculas(texto)); 
+ 
