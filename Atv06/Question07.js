@@ -2,17 +2,18 @@
 
 
 function maiorNum(a, b, c, d, e) {
+    for (var i = 0; i < 5; i++) {
+        numeros[i] = parseInt(prompt("Digite um número: "));
+    }
+
     let maiorNum = a
     if(b > maior) {
         maior = b
-    }
-    if(c > maior) {
+    } else if(c > maior) {
         maior = c
-    }
-    if(d > maior) {
+    } else if(d > maior) {
         maior = d
-    }
-    if(e > maior) {
+    } else (e > maior); {
         maior = e
     }
     console.log(maiorNum)
