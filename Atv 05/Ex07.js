@@ -2,3 +2,4 @@
 function adicionarPorcentagem(valor, porcentagem) {
     return valor + (valor * porcentagem / 100);
 }
+console.log(acrescentarPorcentagem());
