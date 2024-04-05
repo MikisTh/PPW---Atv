@@ -1,14 +1,11 @@
 // Crie uma função que calcule o fatorial de um número. Utilize essa função para calcular o fatorial de diferentes números.
 
-function calcularFatorial(num) {
-    if (num < 0) 
-      return 'Número inválido. O fatorial não é definido para números negativos.';
-    
-    let fatorial = 1;
-    for (let i = 2; i <= num; i++) {
-      fatorial *= i;
+function fatorial(n) {
+    let fat = 1
+    for (let c = n; c > 1; c--) {
+        fat *= c
     }
-    return fatorial;
-  }
+    return fat
+}
 
-console.log(calcularFatorial(num))
+console.log(fatorial(10));
