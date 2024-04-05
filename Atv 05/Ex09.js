@@ -9,3 +9,5 @@ function binario(n) {
     return bin
 }
 
+console.log(binario(10000));
+
