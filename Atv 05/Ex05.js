@@ -1,15 +1,11 @@
 // Desenvolva uma função que determine se um número é primo ou não. Retorne true se for primo e false se não for.
-function primo(){
-    var numero = parseInt(document.getElementById('num').value);
-    var resposta = document.getElementById('resposta');
-    var divisores=0;
-  
-    for(var count=1 ; count<=numero ; count++)
-     if(numero % count == 0)
-         divisores++;
-    
-    if(divisores==2)
-        resposta.innerHTML='É primo';
-    else
-        resposta.innerHTML='Não é primo';
-  }
+function primo(numero) {
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(primo());
