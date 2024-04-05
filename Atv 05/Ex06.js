@@ -5,9 +5,13 @@ function inverterArray(arr) {
 
 let numeros = [1, 2, 3, 4, 5];
 let letras = ['a', 'b', 'c', 'd', 'e'];
+let conjuntos = [];
+
 
 numeros = inverterArray(numeros);
 letras = inverterArray(letras);
+conjuntos = inverterArray(conjuntos);
 
 console.log(numeros); 
-console.log(letras); 
+console.log(letras);
+console.log(conjuntos);
