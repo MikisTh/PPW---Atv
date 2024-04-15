@@ -1,0 +1,9 @@
+let prompt = require('prompt-sync')();
+
+// Obtém a entrada do usuário.
+let n = prompt('Quanto Tempo? ');
+
+// Converte a entrada do usuário para um número, se necessário.
+let tempo = Number(n);
+
+console.log(`O tempo informado foi: ${tempo}`);
