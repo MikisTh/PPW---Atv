@@ -1,0 +1,60 @@
+label {
+  color: rgb(12, 1, 1);
+  padding: 8px;
+  align-content: center;
+
+}
+
+div {
+
+    color: blue;
+    text-align:left;
+
+}
+input {
+
+    align-content: center;
+    margin: 15px;
+    width: 250px;  
+    padding: 1em;
+    border-radius: 2em;
+
+}
+
+textarea {
+    align-content: center;
+    margin: 15px;
+    width: 250px;  
+    padding: 1em;
+    border-radius: 2em;
+
+}
+
+form {
+
+  margin: 0 auto;
+  width: 330px;  
+  padding: 1em;
+  border: 1px solid #012904;
+  border-radius: 1em;
+}
+
+button {
+    align-content: center;
+    align-items: center;
+    background-color: #04AA6D; 
+    border: 1px solid #002504;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;    
+    font-size: 15px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
